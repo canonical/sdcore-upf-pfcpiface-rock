@@ -18,3 +18,4 @@ jobs:
     if: github.ref_name == 'main'
     needs: scan-rock
     uses: canonical/sdcore-github-workflows/.github/workflows/publish-rock.yaml@main
+
