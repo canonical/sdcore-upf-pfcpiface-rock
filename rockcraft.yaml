@@ -8,6 +8,7 @@ description: SD-Core UPF PFCPIFACE
 license: Apache-2.0
 platforms:
   amd64:
+  arm64:
 
 parts:
   pfcpiface:
