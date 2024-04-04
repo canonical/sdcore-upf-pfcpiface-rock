@@ -4,6 +4,6 @@ CONTRIBUTING.md # Contributing
 
 ```bash
 rockcraft pack -v
-sudo skopeo --insecure-policy copy oci-archive:sdcore-upf-pfcpiface_1.3_amd64.rock docker-daemon:sdcore-upf-pfcpiface:1.3
-docker run sdcore-upf-pfcpiface:1.3
+sudo skopeo --insecure-policy copy oci-archive:sdcore-upf-pfcpiface_1.4.0_amd64.rock docker-daemon:sdcore-upf-pfcpiface:1.4.0
+docker run sdcore-upf-pfcpiface:1.4.0
 ```
