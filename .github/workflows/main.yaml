@@ -1,7 +1,12 @@
 name: Main
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 * * 0'
 
@@ -18,4 +23,3 @@ jobs:
     if: github.ref_name == 'main'
     needs: scan-rock
     uses: canonical/sdcore-github-workflows/.github/workflows/publish-rock.yaml@v0.0.1
-
