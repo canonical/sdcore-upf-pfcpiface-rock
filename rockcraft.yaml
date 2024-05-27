@@ -1,7 +1,7 @@
 ---
 name: sdcore-upf-pfcpiface
 base: bare
-build-base: ubuntu@22.04
+build-base: ubuntu@24.04
 version: '1.4.0'
 summary: SD-Core UPF PFCPIFACE
 description: SD-Core UPF PFCPIFACE
@@ -19,5 +19,6 @@ parts:
       - go
     stage-packages:
       - libc6_libs
+      - base-files_lib
     prime:
       - -bin/p4info_code_gen
