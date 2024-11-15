@@ -2,7 +2,7 @@
 name: sdcore-upf-pfcpiface
 base: bare
 build-base: ubuntu@24.04
-version: '1.4.0'
+version: '1.5.0'
 summary: SD-Core UPF PFCPIFACE
 description: SD-Core UPF PFCPIFACE
 license: Apache-2.0
@@ -14,7 +14,7 @@ parts:
   pfcpiface:
     plugin: go
     source: https://github.com/omec-project/upf.git
-    source-tag: v1.4.0
+    source-tag: v${CRAFT_PROJECT_VERSION}
     build-snaps:
       - go
     stage-packages:
